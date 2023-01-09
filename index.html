@@ -12,36 +12,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2f4a200dac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- hero class -->
     <section class="hero">
+        <!-- navbar -->
         <nav>
-
             <img class="logo" src="src/images/logo2.png" alt="Remo Rulloda's Logo">
             <!-- <a target="_blank" href="https://icons8.com/icon/JcIARfA9uKZj/r-key">R Key</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-
-
             <ul>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-        <!-- hero area class -->
+        <!-- hero-area class -->
         <div class="hero-area">
-            <!-- hero text class -->
+            <!-- hero-text class -->
             <div class="hero-text">
                 <h1>Remo Rulloda</h1>
                 <p>Frontend Developer</p>
-                <div class="button">About me</div>
+                <div class="button"><a href="#about-me">About me</a></div>
             </div>
 
-            <!-- socials class -->
+            <!-- Socials class -->
             <div class="socials">
-                <!-- twitter -->
+                <!-- Twitter -->
                 <div class="social">
                     <a href="https://twitter.com/ryzen5198" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
@@ -51,7 +53,7 @@
                         </svg>
                     </a>
                 </div>
-                <!-- linkedin -->
+                <!-- LinkedIn -->
                 <div class="social">
                     <a href="https://www.linkedin.com/in/remorulloda" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
@@ -61,7 +63,7 @@
                         </svg>
                     </a>
                 </div>
-                <!-- github -->
+                <!-- GitHub -->
                 <div class="social">
                     <a href="https://github.com/remosrulloda" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
@@ -75,7 +77,9 @@
             </div>
         </div>
     </section>
-    <section class="sub-section">
+
+    <!-- About Me Section -->
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
             <p>Hello. My name is Remo Rulloda. I am a computer science student and software developer with a passion for
@@ -86,40 +90,61 @@
             <img src="src/images/headshot.png" alt="Remo Rulloda headshot" class="headshot">
         </div>
     </section>
+
     <section class="sub-section-alternative">
+        <!-- projects -->
         <h2>Projects</h2>
-        <div class="project-container">
+        <div class="project-container" id="projects">
+            <!-- Truth or Dare -->
             <div class="project-card">
-                <img class="project-image" src="src/images/truthdarelogin.gif" alt="Truth or Dare App">
-                <hr>
+                <img class="project-image" src="src/images/truthordare.png" alt="Truth or Dare App">
                 <h3>Truth or Dare</h3>
-                <p class="subtext">An app that allows you to play Truth or Dare like a social media app.</p>
-                <p></p>
+                <p class="subtext">An Android app that allows you to play Truth or Dare like a social media app.</p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://github.com/TruthorDareApp/Truth-or-Dare"
+                        target="_blank">View
+                        here</a></p>
             </div>
+
+            <!-- Survey Form -->
             <div class="project-card">
                 <img class="project-image" src="src/images/surveyform.png" alt="Survey Form">
-                <hr>
                 <h3>Survey Form</h3>
                 <p class="subtext">A creation of freeCodeCamp's Survey Form</p>
-                <p></p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://remorulloda-surveyform.netlify.app/"
+                        target="_blank">View here</a>
+                </p>
             </div>
+
+            <!-- Tribute Page -->
             <div class="project-card">
                 <img class="project-image" src="src/images/tributepage.jpeg" alt="Tribute Page">
-                <hr>
                 <h3>Tribute Page</h3>
                 <p class="subtext">A Tribute Page from freeCodeCamp's Responsive Web Design course.</p>
-                <p></p>
-            </div>
-            <div class="project-card">
-                <img class="project-image" src="" alt="">
                 <hr>
-                <h3></h3>
-                <p class="subtext"></p>
-                <p></p>
+                <p class="subtext"><a class="project-link" href="https://remorullodatributepage.netlify.app/"
+                        target="_blank">View here</a>
+                </p>
+            </div>
+
+            <!-- Whack-A-Mole -->
+            <div class="project-card">
+                <img class="project-image" src="src/images/whackamole.png" alt="Grammy Whack-A-Mole">
+                <h3>Ariana Grande <br> Grammy Whack-A-Mole</h3>
+                <p class="subtext">Try to catch as many Grammys as possible!</p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://remorulloda-whackamole.netlify.app/"
+                        target="_blank">View here</a>
+                </p>
             </div>
         </div>
     </section>
-    <footer></footer>
+
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+        <p>remosrulloda@gmail.com</p>
+    </footer>
     <script src="src/app.js"></script>
 </body>
 
