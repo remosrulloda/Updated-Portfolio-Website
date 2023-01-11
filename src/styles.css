@@ -34,6 +34,10 @@ ul {
     font-size: 30px;
 }
 
+ul.show {
+    display: block;
+}
+
 li {
     text-decoration: none;
 }
@@ -136,7 +140,7 @@ p {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(194, 190, 190);
-    margin: 10px;
+    margin: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -177,6 +181,10 @@ a {
     display: none;
 }
 
+.hamburger:focus {
+    outline: 0;
+}
+
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
@@ -184,9 +192,23 @@ a {
         background-color: transparent;
         color: white;
         font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
     }
 
     ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
         display: none;
     }
 }
