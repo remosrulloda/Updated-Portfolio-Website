@@ -80,7 +80,6 @@ p {
 .button {
     width: 200px;
     height: 60px;
-    background-color: #44676E;
     border-radius: 30px;
     text-align: center;
     font-family: 'Space Mono', monospace;
@@ -157,7 +156,7 @@ p {
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .project-image {
