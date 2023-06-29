@@ -1,3 +1,7 @@
+:root {
+    --hover: #669289;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -88,11 +92,16 @@ p {
     padding-top: 5px;
     margin-top: 20px;
     border: white solid 3px;
+
+    background: linear-gradient(to right, var(--hover) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 .button:hover {
-    background-color: #669289;
     cursor: pointer;
+    background-position: left bottom;
 }
 
 .button:active {
